@@ -1,6 +1,6 @@
 export const Container = (props: {
   title: string;
-  children: React.ReactElement;
+  children: React.ReactNode;
 }) => {
   const { title, children } = props;
   return (
@@ -13,7 +13,7 @@ export const Container = (props: {
 
 export const Parent = () => {
   return (
-    <Container title="Hello">
+    <Container title="Parent">
       <p>ここが赤くなるはず</p>
     </Container>
   );
